@@ -24,25 +24,25 @@ public class MyKeyboardLib extends Library
      * a no-arguments constructor method of the user-designated class.
      */
     public MyKeyboardLib()
-	{
+    {
         tools = Arrays.asList(new AddTool[]
-		{
-                new AddTool(new Keyboard())
+        {
+            new AddTool(new Keyboard())
         });
     }
     
     /** Returns the name of the library that the user will see. */ 
     public String getDisplayName()
-	{
+    {
         return "MCSoftware Musical Keyboard";
     }
     
     /** Returns a list of all the tools available in this library. */
     public List<AddTool> getTools()
-	{
+    {
         return tools;
     }
 
-	//@Override
-	public boolean removeLibrary(String name) { return false; }
+    //@Override
+    public boolean removeLibrary(String name) { return false; }
 }

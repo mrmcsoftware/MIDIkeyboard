@@ -57,6 +57,7 @@ for a JAR file (which would be needed for building this component if you need to
 for an executable version.
 
 If using the JAR version, you would need to do the following to run it:
+
     java -jar logisim-generic-2.7.1.jar
 
 ## Building

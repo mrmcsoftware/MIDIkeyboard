@@ -113,7 +113,7 @@ public class Keyboard extends InstanceFactory
 		setFacingAttribute(StdAttr.FACING);
 		/* URL url = getClass().getClassLoader().getResource("resources/logisim/icons/mycircuit.gif");
 		setIcon(new ImageIcon(url)); */
-        //setOffsetBounds(Bounds.create(0, 0, 720, 130));
+		//setOffsetBounds(Bounds.create(0, 0, 720, 130));
 		setInstancePoker(Poker.class);
 		// Use Java's reflection to determine which version of Logisim
 		Class c, params[] = new Class[1], params2[] = new Class[2];
@@ -219,11 +219,11 @@ public class Keyboard extends InstanceFactory
 			}
 		if ((noteX > -1) && (noteH == 128))
 			{
-        	g.setColor(noteColor);
-        	//g.setColor(Color.RED);
+			g.setColor(noteColor);
+			//g.setColor(Color.RED);
 			g.fillRect(noteX, noteY, noteW, noteH);
 			}
-        g.setColor(Color.BLACK);
+		g.setColor(Color.BLACK);
 		for (i=1; i<numKey; i++)
 			{
 			if (sharps[(i-1)%7] == 1)
@@ -233,10 +233,10 @@ public class Keyboard extends InstanceFactory
 			}
 		if ((noteX > -1) && (noteH < 120))
 			{
-        	g.setColor(noteColor);
-        	//g.setColor(Color.RED);
+			g.setColor(noteColor);
+			//g.setColor(Color.RED);
 			g.fillRect(noteX, noteY, noteW, noteH);
-        	g.setColor(Color.BLACK);
+			g.setColor(Color.BLACK);
 			}
 		GraphicsUtil.switchToWidth(g, 1);
 		if (painter.getAttributeValue(ATTR_LABELN))
@@ -256,25 +256,25 @@ public class Keyboard extends InstanceFactory
 		painter.drawPorts();
 	}
 	
-    @Override
-    public void paintIcon(InstancePainter painter)
+	@Override
+	public void paintIcon(InstancePainter painter)
 	{
-        Graphics g = painter.getGraphics();
-        g.setColor(Color.BLACK);
-        g.drawRoundRect(0, 2, 34, 14, 3, 2);
-        g.setColor(Color.LIGHT_GRAY);
-        g.fillRect(3, 4, 29, 11);
-        g.setColor(Color.BLACK);
-        g.fillRect(6, 4, 3, 5);
-        g.fillRect(12, 4, 3, 5);
-        g.fillRect(24, 4, 3, 5);
-        g.fillRect(30, 4, 2, 5);
+		Graphics g = painter.getGraphics();
+		g.setColor(Color.BLACK);
+		g.drawRoundRect(0, 2, 34, 14, 3, 2);
+		g.setColor(Color.LIGHT_GRAY);
+		g.fillRect(3, 4, 29, 11);
+		g.setColor(Color.BLACK);
+		g.fillRect(6, 4, 3, 5);
+		g.fillRect(12, 4, 3, 5);
+		g.fillRect(24, 4, 3, 5);
+		g.fillRect(30, 4, 2, 5);
 		g.drawRect(3, 4, 4, 10);
 		g.drawRect(7, 4, 6, 10);
 		g.drawRect(13, 4, 6, 10);
 		g.drawRect(19, 4, 6, 10);
 		g.drawRect(25, 4, 6, 10);
-    }
+	}
 
 	@Override
 	public Bounds getOffsetBounds(AttributeSet attrs)
