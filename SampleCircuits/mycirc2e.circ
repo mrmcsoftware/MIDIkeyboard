@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="2.7.1" version="1.0">
+This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
+<lib desc="#Wiring" name="0">
+    <tool name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="incoming" val="32"/>
+      <a name="bit1" val="0"/>
+      <a name="bit2" val="0"/>
+      <a name="bit3" val="0"/>
+      <a name="bit4" val="0"/>
+      <a name="bit5" val="0"/>
+      <a name="bit6" val="0"/>
+      <a name="bit7" val="0"/>
+      <a name="bit8" val="0"/>
+      <a name="bit9" val="0"/>
+      <a name="bit10" val="0"/>
+      <a name="bit11" val="0"/>
+      <a name="bit12" val="0"/>
+      <a name="bit13" val="0"/>
+      <a name="bit14" val="0"/>
+      <a name="bit15" val="0"/>
+      <a name="bit16" val="1"/>
+      <a name="bit17" val="1"/>
+      <a name="bit18" val="1"/>
+      <a name="bit19" val="1"/>
+      <a name="bit20" val="1"/>
+      <a name="bit21" val="1"/>
+      <a name="bit22" val="1"/>
+      <a name="bit23" val="1"/>
+      <a name="bit24" val="1"/>
+      <a name="bit25" val="1"/>
+      <a name="bit26" val="1"/>
+      <a name="bit27" val="1"/>
+      <a name="bit28" val="1"/>
+      <a name="bit29" val="1"/>
+      <a name="bit30" val="1"/>
+      <a name="bit31" val="1"/>
+    </tool>
+    <tool name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+    </tool>
+    <tool name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="Reset"/>
+    </tool>
+    <tool name="Pull Resistor">
+      <a name="facing" val="west"/>
+    </tool>
+  </lib>
+  <lib desc="#Gates" name="1"/>
+  <lib desc="#Plexers" name="2"/>
+  <lib desc="#Arithmetic" name="3"/>
+  <lib desc="#Memory" name="4">
+    <tool name="ROM">
+      <a name="contents">addr/data: 8 8
+0
+</a>
+    </tool>
+  </lib>
+  <lib desc="#I/O" name="5"/>
+  <lib desc="#Base" name="6">
+    <tool name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="SansSerif bold 16"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+  </lib>
+  <lib desc="jar#midikeyboard.jar#com.mcsoftware.logisim.mykeyboardlib.MyKeyboardLib" name="7"/>
+  <lib desc="jar#midi-ev.jar#kahdeg.test.library" name="8"/>
+  <main name="main"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool lib="6" map="Button2" name="Menu Tool"/>
+    <tool lib="6" map="Ctrl Button1" name="Menu Tool"/>
+    <tool lib="6" map="Button3" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool lib="6" name="Poke Tool"/>
+    <tool lib="6" name="Edit Tool"/>
+    <tool lib="6" name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="SansSerif bold 16"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+    <sep/>
+    <tool lib="0" name="Pin">
+      <a name="tristate" val="false"/>
+    </tool>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </tool>
+    <tool lib="1" name="NOT Gate"/>
+    <tool lib="1" name="AND Gate"/>
+    <tool lib="1" name="OR Gate"/>
+  </toolbar>
+  <circuit name="main">
+    <a name="circuit" val="main"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(150,360)" to="(160,360)"/>
+    <wire from="(90,210)" to="(130,210)"/>
+    <wire from="(160,140)" to="(170,140)"/>
+    <wire from="(530,140)" to="(530,160)"/>
+    <wire from="(50,430)" to="(160,430)"/>
+    <wire from="(120,530)" to="(160,530)"/>
+    <wire from="(530,120)" to="(540,120)"/>
+    <wire from="(100,80)" to="(130,80)"/>
+    <wire from="(510,140)" to="(530,140)"/>
+    <wire from="(40,60)" to="(40,440)"/>
+    <wire from="(430,40)" to="(440,40)"/>
+    <wire from="(20,20)" to="(20,450)"/>
+    <wire from="(530,180)" to="(540,180)"/>
+    <wire from="(90,210)" to="(90,580)"/>
+    <wire from="(140,370)" to="(150,370)"/>
+    <wire from="(110,270)" to="(160,270)"/>
+    <wire from="(70,70)" to="(70,600)"/>
+    <wire from="(390,10)" to="(390,30)"/>
+    <wire from="(30,30)" to="(350,30)"/>
+    <wire from="(370,100)" to="(370,140)"/>
+    <wire from="(70,70)" to="(130,70)"/>
+    <wire from="(530,180)" to="(530,200)"/>
+    <wire from="(90,580)" to="(160,580)"/>
+    <wire from="(170,70)" to="(190,70)"/>
+    <wire from="(170,140)" to="(190,140)"/>
+    <wire from="(120,220)" to="(120,260)"/>
+    <wire from="(160,210)" to="(170,210)"/>
+    <wire from="(390,170)" to="(410,170)"/>
+    <wire from="(140,340)" to="(150,340)"/>
+    <wire from="(370,100)" to="(390,100)"/>
+    <wire from="(170,210)" to="(170,220)"/>
+    <wire from="(70,600)" to="(160,600)"/>
+    <wire from="(120,220)" to="(130,220)"/>
+    <wire from="(100,80)" to="(100,280)"/>
+    <wire from="(10,10)" to="(10,610)"/>
+    <wire from="(170,70)" to="(170,80)"/>
+    <wire from="(150,360)" to="(150,370)"/>
+    <wire from="(50,130)" to="(130,130)"/>
+    <wire from="(140,390)" to="(140,630)"/>
+    <wire from="(50,130)" to="(50,430)"/>
+    <wire from="(20,20)" to="(370,20)"/>
+    <wire from="(530,120)" to="(530,140)"/>
+    <wire from="(430,170)" to="(540,170)"/>
+    <wire from="(370,60)" to="(370,70)"/>
+    <wire from="(110,690)" to="(160,690)"/>
+    <wire from="(150,380)" to="(150,390)"/>
+    <wire from="(510,200)" to="(530,200)"/>
+    <wire from="(110,660)" to="(120,660)"/>
+    <wire from="(60,420)" to="(160,420)"/>
+    <wire from="(10,10)" to="(390,10)"/>
+    <wire from="(150,340)" to="(150,350)"/>
+    <wire from="(110,150)" to="(110,270)"/>
+    <wire from="(120,260)" to="(160,260)"/>
+    <wire from="(40,440)" to="(160,440)"/>
+    <wire from="(370,90)" to="(370,100)"/>
+    <wire from="(80,140)" to="(80,590)"/>
+    <wire from="(150,350)" to="(160,350)"/>
+    <wire from="(80,140)" to="(130,140)"/>
+    <wire from="(100,280)" to="(160,280)"/>
+    <wire from="(440,40)" to="(440,50)"/>
+    <wire from="(100,630)" to="(140,630)"/>
+    <wire from="(370,40)" to="(400,40)"/>
+    <wire from="(40,60)" to="(130,60)"/>
+    <wire from="(30,30)" to="(30,290)"/>
+    <wire from="(530,160)" to="(540,160)"/>
+    <wire from="(580,170)" to="(600,170)"/>
+    <wire from="(350,30)" to="(350,50)"/>
+    <wire from="(370,140)" to="(420,140)"/>
+    <wire from="(150,380)" to="(160,380)"/>
+    <wire from="(60,200)" to="(130,200)"/>
+    <wire from="(160,70)" to="(170,70)"/>
+    <wire from="(440,40)" to="(460,40)"/>
+    <wire from="(30,290)" to="(160,290)"/>
+    <wire from="(80,590)" to="(160,590)"/>
+    <wire from="(170,210)" to="(190,210)"/>
+    <wire from="(60,200)" to="(60,420)"/>
+    <wire from="(170,140)" to="(170,150)"/>
+    <wire from="(160,370)" to="(160,380)"/>
+    <wire from="(380,50)" to="(400,50)"/>
+    <wire from="(370,20)" to="(370,40)"/>
+    <wire from="(140,390)" to="(150,390)"/>
+    <wire from="(390,30)" to="(400,30)"/>
+    <wire from="(120,530)" to="(120,660)"/>
+    <wire from="(10,610)" to="(160,610)"/>
+    <wire from="(350,50)" to="(360,50)"/>
+    <wire from="(20,450)" to="(160,450)"/>
+    <wire from="(110,150)" to="(130,150)"/>
+    <wire from="(420,140)" to="(420,160)"/>
+    <comp lib="0" loc="(540,120)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="16"/>
+      <a name="radix" val="10unsigned"/>
+    </comp>
+    <comp lib="6" loc="(236,212)" name="Text">
+      <a name="text" val="Vibraphone"/>
+      <a name="font" val="SansSerif bold 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(832,100)" name="Text">
+      <a name="text" val="or:"/>
+      <a name="font" val="SansSerif bold 13"/>
+    </comp>
+    <comp lib="0" loc="(140,370)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="16"/>
+      <a name="label" val="BF"/>
+    </comp>
+    <comp lib="0" loc="(170,80)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="output" val="true"/>
+      <a name="width" val="8"/>
+      <a name="radix" val="10unsigned"/>
+    </comp>
+    <comp lib="7" loc="(160,570)" name="MCKeyboard">
+      <a name="octaveoff" val="5"/>
+      <a name="channel" val="1"/>
+    </comp>
+    <comp lib="1" loc="(160,140)" name="OR Gate">
+      <a name="width" val="8"/>
+      <a name="size" val="30"/>
+      <a name="inputs" val="3"/>
+    </comp>
+    <comp lib="1" loc="(430,40)" name="OR Gate">
+      <a name="width" val="8"/>
+      <a name="size" val="30"/>
+      <a name="inputs" val="3"/>
+    </comp>
+    <comp lib="0" loc="(440,50)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="output" val="true"/>
+      <a name="width" val="8"/>
+      <a name="radix" val="10unsigned"/>
+    </comp>
+    <comp lib="8" loc="(220,70)" name="sound emitter">
+      <a name="channel" val="9"/>
+    </comp>
+    <comp lib="0" loc="(100,630)" name="Pin">
+      <a name="width" val="3"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="6" loc="(834,124)" name="Text">
+      <a name="text" val="etc."/>
+      <a name="font" val="SansSerif bold 13"/>
+    </comp>
+    <comp lib="0" loc="(600,170)" name="Clock">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="7" loc="(160,250)" name="MCKeyboard">
+      <a name="octaveoff" val="3"/>
+      <a name="channel" val="3"/>
+      <a name="channelsel" val="4"/>
+    </comp>
+    <comp lib="0" loc="(390,100)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val=" Midi_or_Buzzer"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="6" loc="(240,143)" name="Text">
+      <a name="text" val="Tubular Bell"/>
+      <a name="font" val="SansSerif bold 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(140,340)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="BE"/>
+    </comp>
+    <comp lib="8" loc="(220,140)" name="sound emitter">
+      <a name="instrument" val="14: Tubular-bell"/>
+    </comp>
+    <comp lib="7" loc="(160,410)" name="MCKeyboard">
+      <a name="octaveoff" val="5"/>
+      <a name="channel" val="2"/>
+    </comp>
+    <comp lib="6" loc="(510,42)" name="Text">
+      <a name="text" val="Church Organ"/>
+      <a name="font" val="SansSerif bold 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(740,126)" name="Text">
+      <a name="text" val="D8 E8 C8 C7 G7"/>
+      <a name="font" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(110,690)" name="Pin">
+      <a name="width" val="3"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(170,150)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="output" val="true"/>
+      <a name="width" val="8"/>
+      <a name="radix" val="10unsigned"/>
+    </comp>
+    <comp lib="0" loc="(510,200)" name="Pin">
+      <a name="width" val="7"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="Volume"/>
+    </comp>
+    <comp lib="1" loc="(430,170)" name="Controlled Buffer">
+      <a name="control" val="left"/>
+    </comp>
+    <comp lib="1" loc="(160,210)" name="OR Gate">
+      <a name="width" val="8"/>
+      <a name="size" val="30"/>
+      <a name="inputs" val="3"/>
+    </comp>
+    <comp lib="0" loc="(110,660)" name="Pin">
+      <a name="width" val="3"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="6" loc="(740,102)" name="Text">
+      <a name="text" val="D6 E6 C6 C5 G5"/>
+      <a name="font" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(736,80)" name="Text">
+      <a name="text" val="Close Encounters of the Third Kind is:"/>
+      <a name="font" val="SansSerif bold 13"/>
+    </comp>
+    <comp lib="0" loc="(170,220)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="output" val="true"/>
+      <a name="width" val="8"/>
+      <a name="radix" val="10unsigned"/>
+    </comp>
+    <comp lib="1" loc="(370,70)" name="NOT Gate">
+      <a name="facing" val="north"/>
+      <a name="size" val="20"/>
+    </comp>
+    <comp lib="1" loc="(160,70)" name="OR Gate">
+      <a name="width" val="8"/>
+      <a name="size" val="30"/>
+      <a name="inputs" val="3"/>
+    </comp>
+    <comp lib="0" loc="(390,170)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="BE"/>
+    </comp>
+    <comp lib="1" loc="(380,50)" name="Controlled Buffer">
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="6" loc="(284,72)" name="Text">
+      <a name="text" val="Percussion"/>
+      <a name="font" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="8" loc="(490,40)" name="sound emitter">
+      <a name="instrument" val="180: Church Org.2"/>
+    </comp>
+    <comp lib="8" loc="(220,210)" name="sound emitter">
+      <a name="instrument" val="175: Vibraphone  "/>
+    </comp>
+    <comp lib="0" loc="(510,140)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="16"/>
+      <a name="label" val="BF"/>
+    </comp>
+  </circuit>
+</project>

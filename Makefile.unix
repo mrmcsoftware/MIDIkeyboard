@@ -1,0 +1,13 @@
+#LOGISIM_JAR_FILE = /usr/local/logisim/logisim-evolution-3.3.1.jar
+#LOGISIM_JAR_FILE = /usr/local/logisim/logisim-evolution-4.0.4hc.jar
+LOGISIM_JAR_FILE = /usr/local/logisim/logisim-generic-2.7.1.jar
+MANIFEST_FILE = MANIFEST.MF
+JAR_FILE = midikeyboard.jar
+BIN_DIR = ./bin
+SRC = src/Keyboard.java src/MyKeyboardLib.java
+
+jar: classes
+	jar cmf $(MANIFEST_FILE) $(JAR_FILE) -C $(BIN_DIR) . src README.md Makefile Makefile.unix MANIFEST.MF
+
+classes:
+	javac -nowarn -encoding ISO-8859-1 -d $(BIN_DIR) -classpath $(LOGISIM_JAR_FILE) $(SRC)
