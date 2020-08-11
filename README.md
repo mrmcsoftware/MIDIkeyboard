@@ -93,6 +93,16 @@ override the channel selector boxes (if enabled) on top of the keyboards.
 
 mycirce.circ and mycirc2e.circ are for Logisim Evolution.
 
+--
+mycircekw.circ is specifically for newer versions of Kevin Walsh's Holy Cross
+Logisim.  For some reason, many of the unused pins on the midi keyboard and the
+midi device have to have a wire connected in order to work (even though the wire
+isn't connected to anything).  So, this circuit file does that.  Older versions
+of Holy Cross Logisim don't have this problem.  Note: it is possible that this
+problem would go away if the two components were re-compiled using at least
+version 11 of (Java) JDK along with the Holy Cross Logisim JAR file.
+--
+
 If you don't have the instruments I use in these circuits, you will get some
 errors on loading.  Just add the midi device components back that were
 eliminated and set the instrument.
