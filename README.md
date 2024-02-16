@@ -79,8 +79,8 @@ On Linux:
 
 ## Other Logisim JAR Libraries That Will/May Be Needed
 
-* [My Midi component (based on kahdeg's)](https://sites.google.com/site/mrmcsoftware/home/downloads/mididevice.zip)
-* [Sound Buzzer](https://sites.google.com/site/immibis/home/files/buzzer.jar)
+* [My Midi component (based on kahdeg's)](https://drive.google.com/file/d/18kxJXluNX2b5dnXA0WdWUHuG0Dl5ZQeX)
+* [Sound Buzzer (link probably doesn't work anymore due to Google changing their sites service)](https://sites.google.com/site/immibis/home/files/buzzer.jar)
 
 BTW, the buzzer's main class name is: immibis.buzzer.Library
 
