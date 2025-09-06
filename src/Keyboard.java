@@ -42,7 +42,7 @@ import com.cburch.logisim.util.GraphicsUtil;
 public class Keyboard extends InstanceFactory
 {
 	private static final int DELAY = 1; // really don't know what this should be
-	private static Method mGetPort,mToValue,mCreateKnown;
+	private static Method mGetPort,mToValue,mCreateKnown,mGetBounds;
 	private Object mArgs[] = new Object[1], mArgs2[] = new Object[2];
 	private static int noteVal = -1, noteX = -1, noteY, noteW, noteH;
 	private static int colorNotes = 1;
@@ -173,12 +173,31 @@ public class Keyboard extends InstanceFactory
 				catch (Throwable e3) { System.out.println(e3); }
 				}
 			}
+		try
+			{
+			/* Is it original Logisim? */
+			c = Class.forName("com.cburch.logisim.instance.InstancePainter");
+			mGetBounds = c.getMethod("getBounds", null);
+			}
+		catch (Throwable e4)
+			{
+			/* newer versions of Holy Cross Evolution that changed .getBounds to
+				.getNominalBounds */
+			try
+				{
+				c = Class.forName("com.cburch.logisim.instance.InstancePainter");
+				mGetBounds = c.getMethod("getNominalBounds", null);
+				}
+			catch (Throwable e5) { System.out.println(e5); }
+			}
 	}
 	
 	public void paintInstance(InstancePainter painter)
 	{
 		Graphics g = painter.getGraphics();
-		Bounds bds = painter.getBounds();
+		//Bounds bds = painter.getBounds();
+		try { Bounds bds = (Bounds)(mGetBounds.invoke(painter,null)); }
+		catch (Throwable e6) { System.out.println(e6); }
 		int x = painter.getLocation().getX();
 		int y = painter.getLocation().getY();
 		int i, dx, numKey, chan;
